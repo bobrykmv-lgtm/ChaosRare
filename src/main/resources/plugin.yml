@@ -1,0 +1,16 @@
+name: ChaosRare
+version: 1.0.0
+main: com.chaossmp.chaosrare.ChaosRare
+api-version: '1.21'
+description: Rare resource mobs plugin for ChaosSMP (UnstableSMP style)
+
+commands:
+  chaosrare:
+    description: Управление плагином ChaosRare
+    usage: /<command> <reload|spawn|info>
+    permission: chaosrare.admin
+
+permissions:
+  chaosrare.admin:
+    description: Доступ к командам ChaosRare
+    default: op
