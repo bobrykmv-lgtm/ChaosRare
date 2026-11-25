@@ -1,0 +1,93 @@
+rare-spawn-chance: 0.005
+allow-spawners: false
+
+notify-nearby:
+  enabled: true
+  radius: 48.0
+
+visuals:
+  glowing: true
+  particles: true
+
+allowed-mobs:
+  - ZOMBIE
+  - SKELETON
+  - CREEPER
+  - SPIDER
+  - HUSK
+  - STRAY
+  - DROWNED
+  - PIGLIN
+
+variants:
+  gold_vein:
+    name: "&6&l✦ Золотая Жила"
+    weight: 55.0
+    max-health: 50.0
+    exp-multiplier: 3.0
+    armor-color: GOLD
+    equipment:
+      helmet: GOLDEN_HELMET
+      chestplate: GOLDEN_CHESTPLATE
+      main-hand: GOLDEN_PICKAXE
+    drops:
+      - material: RAW_GOLD
+        min: 4
+        max: 10
+        chance: 1.0
+      - material: GOLD_INGOT
+        min: 2
+        max: 5
+        chance: 0.75
+      - material: GOLDEN_APPLE
+        min: 1
+        max: 2
+        chance: 0.35
+
+  diamond_stalker:
+    name: "&b&l❖ Алмазный Охотник"
+    weight: 30.0
+    max-health: 75.0
+    exp-multiplier: 4.5
+    armor-color: AQUA
+    equipment:
+      helmet: DIAMOND_HELMET
+      chestplate: DIAMOND_CHESTPLATE
+      main-hand: DIAMOND_PICKAXE
+    drops:
+      - material: DIAMOND
+        min: 2
+        max: 5
+        chance: 1.0
+      - material: RAW_IRON
+        min: 6
+        max: 14
+        chance: 0.8
+      - material: EXPERIENCE_BOTTLE
+        min: 3
+        max: 8
+        chance: 0.6
+
+  unstable_relic:
+    name: "&5&l♛ Нестабильный Реликт"
+    weight: 15.0
+    max-health: 110.0
+    exp-multiplier: 6.0
+    armor-color: PURPLE
+    equipment:
+      helmet: NETHERITE_HELMET
+      chestplate: NETHERITE_CHESTPLATE
+      main-hand: NETHERITE_SWORD
+    drops:
+      - material: ANCIENT_DEBRIS
+        min: 1
+        max: 2
+        chance: 0.85
+      - material: NETHERITE_SCRAP
+        min: 1
+        max: 3
+        chance: 1.0
+      - material: ENCHANTED_GOLDEN_APPLE
+        min: 1
+        max: 1
+        chance: 0.25
