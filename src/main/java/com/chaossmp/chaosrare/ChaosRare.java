@@ -100,7 +100,7 @@ public final class ChaosRare extends JavaPlugin implements Listener, CommandExec
                 double weight = Math.max(0.01, sec.getDouble("weight", 1.0));
                 double maxHealth = Math.max(1.0, sec.getDouble("max-health", 60.0));
                 double expMultiplier = Math.max(1.0, sec.getDouble("exp-multiplier", 3.0));
-                Color armorColor = parseColor(sec.getString("armor-color", "GOLD"));
+                Color armorColor = parseColor(sec.getString("armor-color", "YELLOW"));
                 Material helmetMat = parseMaterial(sec.getString("equipment.helmet", "NONE"));
                 Material chestMat = parseMaterial(sec.getString("equipment.chestplate", "NONE"));
                 Material mainHandMat = parseMaterial(sec.getString("equipment.main-hand", "NONE"));
@@ -352,6 +352,7 @@ public final class ChaosRare extends JavaPlugin implements Listener, CommandExec
     private Color parseColor(String name) {
         if (name == null) return Color.YELLOW;
         return switch (name.trim().toUpperCase(Locale.ROOT)) {
+            case "GOLD", "YELLOW" -> Color.YELLOW;
             case "RED" -> Color.RED;
             case "BLUE" -> Color.BLUE;
             case "GREEN" -> Color.GREEN;
@@ -360,7 +361,7 @@ public final class ChaosRare extends JavaPlugin implements Listener, CommandExec
             case "ORANGE" -> Color.ORANGE;
             case "WHITE" -> Color.WHITE;
             case "BLACK" -> Color.BLACK;
-            default -> Color.GOLD;
+            default -> Color.YELLOW;
         };
     }
 
